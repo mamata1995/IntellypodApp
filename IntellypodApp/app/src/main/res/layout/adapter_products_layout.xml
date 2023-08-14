@@ -9,8 +9,6 @@
     android:padding="10dp"
     android:background="@drawable/corners">
 
-
-
     <ImageView
         android:id="@+id/imgvThumbnail"
         android:layout_width="wrap_content"

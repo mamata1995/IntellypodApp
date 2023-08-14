@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android-extensions'
-
 }
 
 android {
@@ -85,6 +84,4 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
 
     implementation("com.squareup.okhttp3:logging-interceptor:3.9.0")
-
-
 }
