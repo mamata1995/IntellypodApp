@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val progressDialog = ProgressDialog(this)
-        progressDialog.setTitle("Please Wait")
-        progressDialog.setMessage("Loading ...")
+        progressDialog.setTitle(getString(R.string.please_wait))
+        progressDialog.setMessage(getString(R.string.loading))
 
         progressDialog.show()
 
@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
                         adapter = AdapterProducts(productList.products)
                     }
                 } else {
-                    Toast.makeText(this, "Data not available", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.data_not_available), Toast.LENGTH_SHORT).show()
                 }
             })
         } else {
-            Toast.makeText(this, "Internet not available", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.internet_not_available), Toast.LENGTH_SHORT).show()
         }
     }
 }

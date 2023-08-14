@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">IntellypodApp</string>
+    <string name="internet_not_available">Internet not available</string>
+    <string name="data_not_available">Data not available</string>
+    <string name="loading">Loading ...</string>
+    <string name="please_wait">Please Wait</string>
+
 </resources>
