@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         val progressDialog = ProgressDialog(this)
         progressDialog.setTitle(getString(R.string.please_wait))
         progressDialog.setMessage(getString(R.string.loading))
-        
+
         viewModelProducts = ViewModelProvider(this).get(ViewModelProducts::class.java)
 
         if (util.verifyAvailableNetwork(this)) {
@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
                 }
             })
         } else {
+            if (progressDialog.isShowing)
             progressDialog.dismiss()
             Toast.makeText(this, getString(R.string.internet_not_available), Toast.LENGTH_SHORT).show()
         }
